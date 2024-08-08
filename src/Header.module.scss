@@ -1,0 +1,50 @@
+$header-bg-color: #00838F;
+$button-bg-color: #2196F3;
+$font-family-roboto: 'Roboto', sans-serif;
+$font-size-large: 24px;
+$border-radius: 5px;
+
+.app_header {
+    width: 100vw;
+    height: 80px;
+    background-color: $header-bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+
+    .search_container {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 32px;
+
+        .search_input {
+            height: 42px;
+            width: 50vw;
+            border-radius: $border-radius;
+            padding: 0 10px;
+            font-size: $font-size-large;
+            font-family: $font-family-roboto;
+            border: none;
+            outline: none;
+        }
+
+        .search_button {
+            background-color: $button-bg-color;
+            color: white;
+            border: none;
+            font-size: $font-size-large;
+            font-family: $font-family-roboto;
+            border-radius: 4px;
+            padding: 8px 22px; 
+            margin-left: 8px;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+    }
+}

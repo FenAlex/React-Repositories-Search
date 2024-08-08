@@ -1,0 +1,13 @@
+.App {
+  display: flex; /* Используем flexbox для управления расположением элементов */
+  flex-direction: column; /* Располагаем элементы в колонку */
+  width: 100%; 
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.body {
+  flex: 1; /* Занимает все оставшееся пространство */
+  overflow: auto; /* Позволяет прокрутку, если контент превышает высоту */
+}
